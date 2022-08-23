@@ -14,7 +14,7 @@ export function resizeImage(img) {
                 }
             }
             // "https://ond58j9gt9.execute-api.sa-east-1.amazonaws.com/dev/validate"
-            const res = await axios.post("http://localhost:4000/validate",img.input,config);
+            const res = await axios.post("https://ond58j9gt9.execute-api.sa-east-1.amazonaws.com/dev/validate",img.input,config);
             console.log(res.data)
             return dispatch({
                 type: RESIZE_IMAGE,

@@ -173,7 +173,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/api/dev/1661265811460-2022-08-23T14:43:31.460Z/api.zip"
+                "S3Key": "serverless/api/dev/1661298530095-2022-08-23T23:48:50.095Z/api.zip"
               },
               "Handler": "index.handler",
               "Runtime": "nodejs14.x",
@@ -191,14 +191,14 @@
               "AppLogGroup"
             ]
           },
-          "AppLambdaVersionJMDGh4taI7rYIYZqYOtrUG3bFWMgMx0bfEHyCoN0": {
+          "AppLambdaVersionuqv1QKoP7T4zZW14CtIjz4CSsf1XfWJZxBdAVNdCHc4": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "AppLambdaFunction"
               },
-              "CodeSha256": "Lw8pMXMjpTRbD9ErseHZlM2sPyCvPy6LWlpf4oqceOg="
+              "CodeSha256": "0Asyn75Sk4/0svr9+2gpfwLhd78tmRfrsvPYTdku9Qo="
             }
           },
           "ApiGatewayRestApi": {
@@ -323,7 +323,7 @@
               "AppLambdaPermissionApiGateway"
             ]
           },
-          "ApiGatewayDeployment1661265774538": {
+          "ApiGatewayDeployment1661298476365": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -386,7 +386,7 @@
           "AppLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "AppLambdaVersionJMDGh4taI7rYIYZqYOtrUG3bFWMgMx0bfEHyCoN0"
+              "Ref": "AppLambdaVersionuqv1QKoP7T4zZW14CtIjz4CSsf1XfWJZxBdAVNdCHc4"
             },
             "Export": {
               "Name": "sls-api-dev-AppLambdaFunctionQualifiedArn"
@@ -522,7 +522,7 @@
         "timeout": 6,
         "runtime": "nodejs14.x",
         "vpc": {},
-        "versionLogicalId": "AppLambdaVersionJMDGh4taI7rYIYZqYOtrUG3bFWMgMx0bfEHyCoN0"
+        "versionLogicalId": "AppLambdaVersionuqv1QKoP7T4zZW14CtIjz4CSsf1XfWJZxBdAVNdCHc4"
       }
     },
     "configValidationMode": "warn",
@@ -542,7 +542,7 @@
     "artifact": "C:\\Users\\Ana\\Desktop\\proof-of-concept\\api\\.serverless\\api.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/api/dev/1661265811460-2022-08-23T14:43:31.460Z",
+    "artifactDirectoryName": "serverless/api/dev/1661298530095-2022-08-23T23:48:50.095Z",
     "artifact": "api.zip"
   }
 }
