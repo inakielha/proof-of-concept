@@ -17,7 +17,7 @@ export default function Landing() {
     const dispatch = useDispatch();
     const [takeSelfie, setTakeSelfie] = useState(false)
     const [btn, setBtn] = useState(false)
-    const {isAuthenticated} = useAuth0()
+    const {isAuthenticated , getAccessTokenSilently} = useAuth0()
     const [isLogged, setIslogged] = useState(false)
     const [input, setInput] = useState({
         type: "",
@@ -28,10 +28,15 @@ export default function Landing() {
     if (backResponse?.ok) navigate("/resize")
 
 
-    function handleSubmit(e) {
+    async function handleSubmit (e) {
         e.preventDefault()
-        dispatch(resizeImage(input))
-        setBtn(true)
+        try {
+            const token = await getAccessTokenSilently()
+            dispatch(resizeImage({input,token}))
+            setBtn(true)
+        } catch(e){
+            console.log(e)
+        }
     }
 
     function handleSelfie(e) {
@@ -43,7 +48,6 @@ export default function Landing() {
         dispatch(clearResponse())
         setBtn(false)
     }, [input])
-
 
 
     const {getRootProps, getInputProps} = useDropzone({

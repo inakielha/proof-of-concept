@@ -1,12 +1,11 @@
 const { Router } = require('express');
 const router = Router();
 const cloudinary = require("../tools/cloudinary")
+const jwt = require("express-jwt")
+const jwkrsRsa = require ("jwks-rsa");
+const authorizeAccesToken = require("../tools/authorizeAccesToken")
 
-router.get("/", (req,res)=>{
-res.json("LAAA CONCHAA DE TU MADREEEE")
-})
-
-router.post("/", async (req, res) => {
+router.post("/",authorizeAccesToken,async (req, res) => {
     try {
         const { type, img, size } = req.body;
         if(!type || !img || !size) return res.json({ok:false, msg: "Missing info"})

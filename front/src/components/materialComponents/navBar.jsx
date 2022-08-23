@@ -20,7 +20,6 @@ import LogoutDialog from './logoutDialog';
 
 const ResponsiveAppBar = () => {
     const {isAuthenticated, user} = useAuth0()
-    console.log(user)
     const navigate = useNavigate()
     const [dialogLogout, setDialogLogout] = useState(false)
     const [anchorElNav, setAnchorElNav] = React.useState(null);
