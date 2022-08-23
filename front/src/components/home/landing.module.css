@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* margin-bottom: 2em; */
 }
 .labelContainer {
     border: 0.1rem solid rgb(205, 203, 203);
@@ -14,14 +15,12 @@
     display: flex;
     justify-content: center;
     background-color: #f1faee;
-    /* max-height: 20rem; */
 }
 .label {
     cursor: pointer;
     height: 100%;
-    margin-left: 1em;
     color: rgb(119, 116, 116);
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,4 +39,12 @@
     max-height: 20rem;
     max-width: 20rem;
     border-radius: 0.7rem;
+}
+.error {
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2em;
+    font-family: inherit;
 }

@@ -11,6 +11,7 @@ export default function ResizeImg() {
     const response = useSelector((state) => state.response);
     return (
         <Container>
+            <div className={style.resize__container}>
             <div className={style.imageContainer}>
                 <CardPhoto setopen={setopen} width="400px" heigth="300px" alt={"large"} imagen={response.allImages.largeImg} name="400x300" url={response.allImages.largeImg} />
 
@@ -30,6 +31,7 @@ export default function ResizeImg() {
                     URL Copy to Clipboard!
                 </Alert>
             </Snackbar>
+            </div>
         </Container>
     )
 }
