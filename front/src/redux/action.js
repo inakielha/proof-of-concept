@@ -6,7 +6,7 @@ export const CLEAR_RESPONSE = "CLEAR_RESPONSE"
 export function resizeImage(img){
     return async function(dispatch){
         try{
-            const res = await axios.post("http://localhost:4000/validate/",img);
+            const res = await axios.post("https://ond58j9gt9.execute-api.sa-east-1.amazonaws.com/dev/validate",img);
             console.log(res.data)
             return dispatch({
                 type: RESIZE_IMAGE,
