@@ -1,9 +1,10 @@
 const { Router } = require('express');
 const router = Router();
-const sharp = require('sharp');
-const Jimp = require('jimp');
-const fs = require("fs");
 const cloudinary = require("../tools/cloudinary")
+
+router.get("/", (req,res)=>{
+res.json("LAAA CONCHAA DE TU MADREEEE")
+})
 
 router.post("/", async (req, res) => {
     try {

@@ -1,5 +1,7 @@
 const express = require("express");
 const thumbnail = require("./routes/thumbnail")
+const serverless = require('serverless-http');
+require('dotenv').config()
 
 const app = express()
 
@@ -20,3 +22,4 @@ app.use("/validate",thumbnail);
 app.listen(app.get("port"),()=>{
     console.log(`app corriendo en puerto ${app.get("port")}`)
 })
+module.exports.handler = serverless(app);
