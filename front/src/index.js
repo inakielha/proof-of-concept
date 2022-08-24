@@ -10,7 +10,7 @@ import {Auth0Provider} from "@auth0/auth0-react"
 // import dotenv from "dotenv"
 // dotenv.config();
 
-
+console.log(window.location.origin)
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
