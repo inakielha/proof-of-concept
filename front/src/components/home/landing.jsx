@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { clearResponse, resizeImage } from "../../redux/action";
-import { Backdrop, Button, CircularProgress, Container, IconButton } from "@mui/material";
+import { Backdrop, Button, CircularProgress, Container } from "@mui/material";
 import style from "./landing.module.css"
 import { useNavigate } from "react-router-dom";
 import CameraAltIcon from '@mui/icons-material/CameraAlt';
