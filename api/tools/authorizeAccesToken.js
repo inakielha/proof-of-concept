@@ -1,5 +1,4 @@
 const { expressjwt: expressJwt } = require('express-jwt');
-// var jwt = require('express-jwt');
 const jwkrsRsa = require ("jwks-rsa");
 require('dotenv').config()
 

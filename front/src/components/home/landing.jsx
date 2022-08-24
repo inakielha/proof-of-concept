@@ -60,7 +60,6 @@ export default function Landing() {
             if (!isAuthenticated) return setIslogged(true)
             let imageName = document.getElementById("imageName")
     
-            console.log(acceptedFiles)
             // CONVERT IT IN BASE 64
             imageName.innerText = acceptedFiles[0].name;
             const reader = new FileReader();

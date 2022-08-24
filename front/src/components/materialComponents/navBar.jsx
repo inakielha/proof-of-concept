@@ -41,10 +41,8 @@ const ResponsiveAppBar = () => {
     setAnchorElUser(null);
   };
   function handleClickMenu(e){
-    console.log(e.target.innerText)
     if(e.target.innerText === "Logout") setDialogLogout(true)
     if(e.target.innerText === "Login") navigate("/login")
-    if(e.target.innerText === user?.given_name) console.log("hola")
   }
 
   return (

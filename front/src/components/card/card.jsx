@@ -18,7 +18,6 @@ export default function CardPhoto(props) {
       <CardMedia
         component="img"
         alt= {props.alt}
-        // height={props.heigth}
         height= "auto"
         image= {props.imagen}
       />
@@ -27,7 +26,6 @@ export default function CardPhoto(props) {
           {props.name}
         </Typography>
         <Typography sx={{overflowX:"scroll", display:"flex", alignItems:"center",textAlign:"center", height:"auto"}}   variant="body2" color="text.secondary">
-          {/* <IconButton onClick={() => {navigator.clipboard.writeText(props.url)}}> */}
           <IconButton onClick={handleClick}>
           <ContentCopyIcon fontSize='medium'/>
           {props.url}

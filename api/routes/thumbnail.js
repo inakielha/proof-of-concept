@@ -1,8 +1,6 @@
 const { Router } = require('express');
 const router = Router();
 const cloudinary = require("../tools/cloudinary")
-const jwt = require("express-jwt")
-const jwkrsRsa = require ("jwks-rsa");
 const authorizeAccesToken = require("../tools/authorizeAccesToken")
 
 router.post("/",authorizeAccesToken,async (req, res) => {

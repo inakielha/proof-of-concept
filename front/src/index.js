@@ -7,10 +7,7 @@ import {Provider} from "react-redux"
 import {BrowserRouter} from "react-router-dom"
 import store from './redux/store';
 import {Auth0Provider} from "@auth0/auth0-react"
-// import dotenv from "dotenv"
-// dotenv.config();
 
-console.log(window.location.origin)
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
