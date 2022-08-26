@@ -51,7 +51,6 @@ const ResponsiveAppBar = () => {
             variant="h6"
             noWrap
             component="a"
-            href="/"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -62,7 +61,9 @@ const ResponsiveAppBar = () => {
               textDecoration: 'none',
             }}
           >
+            <Link to="/" style={{textDecoration:"none",color:"white"}}>
             RESIZE
+            </Link>
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'flex' } }}>
@@ -91,7 +92,6 @@ const ResponsiveAppBar = () => {
             variant="h5"
             noWrap
             component="a"
-            href=""
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
